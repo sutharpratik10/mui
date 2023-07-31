@@ -4,7 +4,7 @@ import { Blog, Feature, Footer, Header, Details } from './Container'
 import {CTA, Brand, Navbar} from './Components'
 
 const App = () => {
-  return (
+  return ( 
     <>
       <div className='App'>
         <div classneame = 'header'>
