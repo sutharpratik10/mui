@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import { Blog, Feature, Footer, Header, Details } from './Container'
+import { Blog, Feature, Footer, Header, Details, Home } from './Container'
 import {CTA, Brand, Navbar} from './Components'
 
 const App = () => {
@@ -8,16 +8,16 @@ const App = () => {
     <>
       <div className='App'>
         <div classneame = 'header'>
-          <Navbar/>
-          <Header/>
+          <Navbar/>  
         </div>
-        <Brand/>
         
         <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/Brand" element={<Brand/>} />
+          <Route path="/Blog" element={<Blog />} />
           <Route path="/Details" element={<Details/>} />
           <Route path="/Feature" element={<Feature/>} />
           <Route path="/CTA" element={<CTA/>} />
-          <Route path="/Blog" element={<Blog />} />
         </Routes>
       
         <div>
