@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/blog.css'
 
-const Blog = () => {
+function Blog() {
   return (
     <div>
       <p>...</p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './style/footer.css'
 
-const Footer = () => {
+function Footer() {
   return (
     
 <footer class="fixed bottom-0 left-0 z-20 w-full bg-white shadow">
