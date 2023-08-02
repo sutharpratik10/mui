@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import { Blog, Feature, Footer, Header, Details, Home } from './Container'
-import {CTA, Brand, Navbar} from './Components'
+import { Blog, Feature, Header, Details, Home } from './Container'
+import {CTA, Brand, Navbar, Footer} from './Components'
 
 const App = () => {
   return ( 
@@ -10,7 +10,6 @@ const App = () => {
         <div classneame = 'header'>
           <Navbar/>  
         </div>
-        
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Brand" element={<Brand/>} />
@@ -19,10 +18,9 @@ const App = () => {
           <Route path="/Feature" element={<Feature/>} />
           <Route path="/CTA" element={<CTA/>} />
         </Routes>
-      
         <div>
           <Footer/>
-        </div>    
+        </div>
       </div>
     </>
   )
