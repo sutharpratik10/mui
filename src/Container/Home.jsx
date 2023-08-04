@@ -12,7 +12,7 @@ const navigation = [
 function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
-    <div className="bg-white dark:bg-slate-700 ">
+    <div className="bg-white dark:bg-slate-700 -mt-28">
       <div className="relative isolate px-6 pt-14 lg:px-8 h-screen md:h-screen sm:h-3/4 lg:h-screen align-middle">
         <div className="absolute inset-x-0 -z-50 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
           <div
@@ -36,7 +36,7 @@ function Home() {
             </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-                Data to enrich your online business
+                Mupltipurpose UI Components for all your requirements
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet

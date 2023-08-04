@@ -46,6 +46,13 @@ import
 
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
+const pages = [
+  { name: 'Brand', href: '/brand'},
+  { name: 'Blog', href: '/blog'},
+  { name: 'Details', href: '/details'},
+  { name: 'Feature', href: '/feature'},
+  { name: 'CTA', href: '/cta'}
+]
 
 const shortcode = [
     { name: 'Accordions', href: '/shortcodes/accordion', icon:  FaList},
@@ -122,4 +129,4 @@ const shortcode = [
     },
   ]
 
-export {shortcode, features};
+export {shortcode, features, pages};

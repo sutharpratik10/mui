@@ -5,7 +5,7 @@ import { NavLink  } from 'react-router-dom';
 import {  Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
 
 import Themeswitcher from '../Themeswitcher'
-import { shortcode } from '../data';
+import { shortcode, pages } from '../data';
 
 import '../style/navbar.css'
 
@@ -39,21 +39,12 @@ function Navbar() {
           </div>
           <Popover.Group className="hidden lg:flex lg:gap-x-12">
             
-            <NavLink to='/brand' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-              Brand
-            </NavLink>
-            <NavLink to='/blog' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-              Blog
-            </NavLink>
-            <NavLink to='/details' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-              Details
-            </NavLink>
-            <NavLink to='/feature' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-              Feature
-            </NavLink>
-            <NavLink to='/cta' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-              CTA
-            </NavLink>
+            {pages.map((item) => (
+              <NavLink to={item.href} className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+                {item.name}
+              </NavLink>
+            ))}
+            
             <Popover className="relative">
               <Popover.Button className="flex items-center gap-x-1 text-base font-semibold leading-6 text-gray-900 dark:text-white">
                 Shortcode
@@ -121,31 +112,14 @@ function Navbar() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10 dark:divide-gray-600">
                 
-                <div className="py-6">
-                  <NavLink to='/brand' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                    Brand
-                  </NavLink>
-                </div>
-                <div className="py-6">
-                  <NavLink to='/blog' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                    Blog
-                  </NavLink>
-                </div>
-                <div className="py-6">
-                  <NavLink to='/details' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                    Details
-                  </NavLink>
-                </div>
-                <div className="py-6">
-                  <NavLink to='/feature' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                    Feature
-                  </NavLink>
-                </div>
-                <div className="py-6">
-                  <NavLink to='/cta' className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                    CTA
-                  </NavLink>
-                </div>
+                {pages.map((item) => (
+                  <div className="py-6">
+                    <NavLink to={item.href} className="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+                      {item.name}
+                    </NavLink>
+                  </div>
+                ))}
+                
                 <div className="space-y-2 py-6">
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
