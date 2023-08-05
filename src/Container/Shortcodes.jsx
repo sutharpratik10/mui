@@ -1,4 +1,4 @@
-import {React, useEffect,} from 'react'
+import {React} from 'react'
 import { features } from '../Components/data'
 
 function Shortcodes() {

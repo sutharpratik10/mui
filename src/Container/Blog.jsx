@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react'
 import './style/blog.css'
 import {CloudArrowUpIcon, LockClosedIcon, ServerIcon} from '@heroicons/react/24/outline'
