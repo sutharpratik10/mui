@@ -1,7 +1,7 @@
 import {React} from 'react'
 import { features } from './data'
 
-import {AccordionAlwaysOpen } from './shortcodes/index'
+import {BasicAccordion } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -14,7 +14,7 @@ function Shortcodes() {
 function Accordion() {
   return (
     <>
-      <AccordionAlwaysOpen/>
+      <BasicAccordion/>
     </>
   )
 }
