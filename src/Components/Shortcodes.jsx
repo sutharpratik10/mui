@@ -1,5 +1,7 @@
 import {React} from 'react'
-import { features } from '../Components/data'
+import { features } from './data'
+
+import {AccordionAlwaysOpen } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -12,7 +14,7 @@ function Shortcodes() {
 function Accordion() {
   return (
     <>
-      
+      <AccordionAlwaysOpen/>
     </>
   )
 }
@@ -20,7 +22,8 @@ function Accordion() {
 function Actionbox() {
   return (
     <>
-    <h1 className='mt-56'>Actionbox</h1>
+    <div className='mt-28'></div>
+    
     </>
   )
 }
@@ -108,7 +111,7 @@ function Counter() {
 function Datatable() {
   return (
     <>
-    <h1 className='mt-56'>Datatable</h1>
+      <h1 className='mt-56'>Datatable</h1>
     </>
   )
 }
@@ -140,7 +143,7 @@ function Featurebox() {
   return (
     <>
     <div className=''>
-      <div className="bg-white pb-14">
+      <div className="pb-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>

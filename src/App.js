@@ -4,7 +4,8 @@ import {
   Blog, 
   Feature, 
   Details, 
-  Home, 
+  Home, } from './Container/index'
+import { 
   Shortcodes, 
   Accordion,
   Actionbox,
@@ -21,6 +22,7 @@ import {
   Datatable,
   Datatables,
   Datepicker,
+  Dropcaphighlight,
   Featurebox,
   Form,
   Gallery,
@@ -49,9 +51,10 @@ import {
   Team,
   Testimonials,
   Typography,
-  Videoaudio, } from './Container'
-import {CTA, Brand, Navbar, Footer} from './Components'
-import { Dropcaphighlight } from './Container/Shortcodes';
+  Videoaudio,
+   } from './Components/Shortcodes'
+
+import {CTA, Brand, Navbar, Footer} from './Components/index';
 
 const App = () => {
   return ( 
