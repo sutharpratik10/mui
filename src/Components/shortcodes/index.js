@@ -1,1 +1,1 @@
-export {AccordionAlwaysOpen} from './Accordions'
+export {BasicAccordion} from './Accordions'
