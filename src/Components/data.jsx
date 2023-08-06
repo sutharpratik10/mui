@@ -102,31 +102,57 @@ const shortcode = [
     { name: 'Video & Audio', href: '/shortcodes/videoaudio', icon: FaVideo }
   ];
 
-  const features = [
-    {
-      name: 'Push to deploy',
-      description:
-        'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-      icon: CloudArrowUpIcon,
-    },
-    {
-      name: 'SSL certificates',
-      description:
-        'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-      icon: LockClosedIcon,
-    },
-    {
-      name: 'Simple queues',
-      description:
-        'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-      icon: ArrowPathIcon,
-    },
-    {
-      name: 'Advanced security',
-      description:
-        'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-      icon: FingerPrintIcon,
-    },
-  ]
+const features = [
+  {
+    name: 'Push to deploy',
+    description:
+      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates',
+    description:
+      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Simple queues',
+    description:
+      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+    icon: ArrowPathIcon,
+  },
+  {
+    name: 'Advanced security',
+    description:
+      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    icon: FingerPrintIcon,
+  },
+];
 
-export {shortcode, features, pages};
+const accordion = [
+  {
+    title: 'consectetur adipiscing elit',
+    description:
+      'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    title: 'Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.',
+    description:
+      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.',
+    icon: LockClosedIcon,
+  },
+  {
+    title: 'Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.',
+    description:
+      ' Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Sed nisi lacus sed viverra. Et netus et malesuada fames ac turpis egestas sed. Ut ornare lectus sit amet est placerat. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Amet justo donec enim diam vulputate ut. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sed tempus urna et pharetra pharetra massa massa. Posuere ac ut consequat semper viverra nam libero. In dictum non consectetur a. Neque sodales ut etiam sit.',
+    icon: ArrowPathIcon,
+  },
+  {
+    title: 'Lacus suspendisse faucibus interdum posuere lorem ipsum.',
+    description:
+      'Cursus sit amet dictum sit amet justo donec enim. Convallis a cras semper auctor neque vitae tempus. Suspendisse in est ante in nibh mauris cursus mattis. Neque ornare aenean euismod elementum. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Amet dictum sit amet justo donec enim diam vulputate. Odio aenean sed adipiscing diam. At tellus at urna condimentum mattis pellentesque. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Faucibus pulvinar elementum integer enim neque volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque. Dolor sit amet consectetur adipiscing elit duis. Nunc id cursus metus aliquam. Pharetra pharetra massa massa ultricies mi. Tempus urna et pharetra pharetra massa massa ultricies mi. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus.',
+    icon: FingerPrintIcon,
+  },
+]
+export {shortcode, features, pages, accordion};
