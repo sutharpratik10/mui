@@ -129,30 +129,71 @@ const features = [
   },
 ];
 
-const accordion = [
+const accordionItems  = [
   {
+    headingid: 'accordion-example-heading-1',
+    bodyid:'accordion-example-body-1',
+    triggerEl: document.querySelector('#accordion-example-heading-1'),
+    targetEl: document.querySelector('#accordion-example-body-1'),
+    active: true,
+    
     title: 'consectetur adipiscing elit',
     description:
       'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
     icon: CloudArrowUpIcon,
   },
   {
+    headingid: 'accordion-example-heading-2',
+    bodyid:'accordion-example-body-2',
+    triggerEl: document.querySelector('#accordion-example-heading-2'),
+    targetEl: document.querySelector('#accordion-example-body-2'),
+    active: false,
+
     title: 'Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.',
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.',
     icon: LockClosedIcon,
   },
   {
+    headingid: 'accordion-example-heading-3',
+    bodyid:'accordion-example-body-3',
+    triggerEl: document.querySelector('#accordion-example-heading-3'),
+    targetEl: document.querySelector('#accordion-example-body-3'),
+    active: false,
+
     title: 'Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.',
     description:
       ' Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Sed nisi lacus sed viverra. Et netus et malesuada fames ac turpis egestas sed. Ut ornare lectus sit amet est placerat. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Amet justo donec enim diam vulputate ut. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sed tempus urna et pharetra pharetra massa massa. Posuere ac ut consequat semper viverra nam libero. In dictum non consectetur a. Neque sodales ut etiam sit.',
     icon: ArrowPathIcon,
   },
   {
+    headingid: 'accordion-example-heading-4',
+    bodyid:'accordion-example-body-4',
+    triggerEl: document.querySelector('#accordion-example-heading-4'),
+    targetEl: document.querySelector('#accordion-example-body-4'),
+    active: false,
+
     title: 'Lacus suspendisse faucibus interdum posuere lorem ipsum.',
     description:
       'Cursus sit amet dictum sit amet justo donec enim. Convallis a cras semper auctor neque vitae tempus. Suspendisse in est ante in nibh mauris cursus mattis. Neque ornare aenean euismod elementum. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Amet dictum sit amet justo donec enim diam vulputate. Odio aenean sed adipiscing diam. At tellus at urna condimentum mattis pellentesque. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Faucibus pulvinar elementum integer enim neque volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque. Dolor sit amet consectetur adipiscing elit duis. Nunc id cursus metus aliquam. Pharetra pharetra massa massa ultricies mi. Tempus urna et pharetra pharetra massa massa ultricies mi. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus.',
     icon: FingerPrintIcon,
   },
 ]
-export {shortcode, features, pages, accordion};
+const accordionoptions = {
+  alwaysOpen: true,
+  activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
+  inactiveClasses: 'text-gray-500 dark:text-gray-400',
+  onOpen: (item) => {
+      console.log('accordion item has been shown');
+      console.log(item);
+  },
+  onClose: (item) => {
+      console.log('accordion item has been hidden');
+      console.log(item);
+  },
+  onToggle: (item) => {
+      console.log('accordion item has been toggled');
+      console.log(item);
+  },
+};
+export {shortcode, features, pages, accordionItems, accordionoptions};
