@@ -1,0 +1,70 @@
+/*Accordion*/
+.container {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+  
+  .accordion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .accordion__item {
+    padding: 0px 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  transition: padding-bottom 0.3s; /*Important: Avoid twitch when transitioning the content on close. Otherwise whilst the content will take 0.3s to close, the accordion item will have a twitch from 20px to 0px*/
+  }
+  
+  .accordion__item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion__item-button {
+    position: relative;
+    width: 100%;
+    border: none;
+    background: inherit;
+    font-weight: bold;
+    text-align: left;
+    padding: 17px 0;
+    outline: none;
+    cursor: pointer;
+    
+  }
+  
+  .accordion__item-button::after {
+    content: '\2304';
+    color: inherit;
+    position: absolute;
+    right: 0px;
+    top: 15%;  
+    font-size: 1.5em
+  }
+  
+  .accordion__item-content {
+    line-height: 1.2em;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height .3s;
+  }
+  
+  .accordion__item.active {
+    padding-bottom: 20px;  
+  }
+  
+  .accordion__item.active .accordion__item-button::after {
+    content: '\2303';
+    top: 28%;
+   
+  }
+  
+  .accordion__item.active .accordion__item-content {
+    /*hardcoded for transtion to works. IT has a downside. It is not responsive, because the item gets longer on small screens. We coould set a higher max-height, BUT the transition will not work anymore, because now we have to transition between 0 and a huge value of max-height in 0.3s but our actual height is much more small*/
+    /*https://css-tricks.com/using-css-transitions-auto-dimensions/*/
+    max-height: 100px;
+    overflow: scroll; 
+  }
+
