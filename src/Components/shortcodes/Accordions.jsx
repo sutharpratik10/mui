@@ -1,22 +1,43 @@
 import React, { useState }  from 'react';
-import '../style/shortcodes.css'
 
 import {accordionItems} from '../data'
 
 function AccordionItem({
   item: { title, description }, // Use "item" prop here
   active,
-  onClickItem
+  onClickItem,
+  itemId
 }) {
  return (
-   <li id='accordion__item' className={`accordion__item ${active ? "active" : ""}`}>
-      <button id='accordion__item-button' className="accordion__item-button" onClick={onClickItem}>
-        {title}
-      </button>
-     <div id='accordion__item-content' className="accordion__item-content">
+  <li
+      className={`transition ease-in-out ${
+        active ? 'border-0' : 'border-0'
+      }`}
+    >
+      <div className='bg-gray-200 dark:bg-slate-800 mb-2'>
+        <button
+          className={`w-full font-bold text-left p-4 outline-none cursor-pointer relative`}
+          onClick={onClickItem}
+        >
+          {title}
+          <span
+            className={`absolute top-1/4 right-5 transform translate-x-1/2 transition ease-in-out  ${
+              active ? 'rotate-180' : ''
+            }`}
+          >
+            &#x2304;
+          </span>
+        </button>
+      </div>
+      
+      <div
+        className={`transition-all ${
+          active ? 'max-h-100 mb-10' : 'max-h-0 opacity-0'
+        } overflow-y-scroll`}
+      >
         {description}
-     </div>
-   </li>
+      </div>
+    </li>
  )
 }
 
@@ -46,7 +67,8 @@ function Accordion({type}) {
              key={accordionItem.id} 
              item={accordionItem}
              onClickItem={() => handleAccordion(idx)}
-             active={openIndexes.includes(idx)}/>
+             active={openIndexes.includes(idx)}
+             itemId={accordionItem.id} />
         ))}
       </ul>
     </div>
