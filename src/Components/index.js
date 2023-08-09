@@ -15,7 +15,7 @@ export {
     Alerts,
     Animations,
     Blockquotes,
-    Buttons,
+    Button,
     Carousel,
     Clients,
     Columns,

@@ -9,11 +9,11 @@ function AccordionItem({
   onClickItem
 }) {
  return (
-   <li className={`accordion__item ${active ? "active" : ""}`}>
-      <button className="accordion__item-button" onClick={onClickItem}>
+   <li id='accordion__item' className={`accordion__item ${active ? "active" : ""}`}>
+      <button id='accordion__item-button' className="accordion__item-button" onClick={onClickItem}>
         {title}
       </button>
-     <div className="accordion__item-content">
+     <div id='accordion__item-content' className="accordion__item-content">
         {description}
      </div>
    </li>
@@ -39,8 +39,8 @@ function Accordion({type}) {
   }
   
   return(
-    <div className="container">
-      <ul className='accordion'>
+    <div className="">
+      <ul className=''>
         {accordionItems.map((accordionItem, idx) => (
           <AccordionItem 
              key={accordionItem.id} 
@@ -55,7 +55,8 @@ function Accordion({type}) {
 
 function BasicAccordion () {
   return (
-      <div className="text-center">
+      <div className="">
+        
         <h2 className="text-[48px] my-10 font-bold leading-7 text-indigo-600 dark:text-indigo-400">Accordions</h2>
         <hr className='mb-10'/>
         <div className="mx-auto text-left">

@@ -1,7 +1,7 @@
 import {React} from 'react'
 import { features } from './data'
 
-import {BasicAccordion } from './shortcodes/index'
+import {BasicAccordion, Buttons } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -23,7 +23,6 @@ function Actionbox() {
   return (
     <>
     <div className='mt-28'></div>
-    
     </>
   )
 }
@@ -52,10 +51,10 @@ function Blockquotes() {
   )
 }
 
-function Buttons() {
+function Button() {
   return (
     <>
-    <h1 className='mt-56'>Buttons</h1>
+      <Buttons/>
     </>
   )
 }
@@ -404,7 +403,7 @@ export {
   Alerts,
   Animations,
   Blockquotes,
-  Buttons,
+  Button,
   Carousel,
   Clients,
   Columns,

@@ -1,15 +1,4 @@
 /*Accordion*/
-.container {
-    width: 500px;
-    margin-bottom: 50px;
-  }
-  
-  .accordion {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
   .accordion__item {
     padding: 0px 10px;
     border-top: 1px solid #ccc;
@@ -65,6 +54,6 @@
     /*hardcoded for transtion to works. IT has a downside. It is not responsive, because the item gets longer on small screens. We coould set a higher max-height, BUT the transition will not work anymore, because now we have to transition between 0 and a huge value of max-height in 0.3s but our actual height is much more small*/
     /*https://css-tricks.com/using-css-transitions-auto-dimensions/*/
     max-height: 100px;
-    overflow: scroll; 
+    overflow-y: scroll; 
   }
 
