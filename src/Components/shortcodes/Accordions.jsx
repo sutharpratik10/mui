@@ -6,7 +6,6 @@ function AccordionItem({
   item: { title, description }, // Use "item" prop here
   active,
   onClickItem,
-  itemId
 }) {
  return (
   <li
