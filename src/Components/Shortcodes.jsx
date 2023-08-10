@@ -1,7 +1,7 @@
 import {React} from 'react'
 import { features } from './data'
 
-import {BasicAccordion, Buttons } from './shortcodes/index'
+import {BasicAccordion, Buttons, Actionboxes } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -22,7 +22,7 @@ function Accordion() {
 function Actionbox() {
   return (
     <>
-    <div className='mt-28'></div>
+     <Actionboxes/>
     </>
   )
 }
