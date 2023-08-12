@@ -158,22 +158,20 @@ const accordionItems  = [
       'Cursus sit amet dictum sit amet justo donec enim. Convallis a cras semper auctor neque vitae tempus. Suspendisse in est ante in nibh mauris cursus mattis. Neque ornare aenean euismod elementum. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Amet dictum sit amet justo donec enim diam vulputate. Odio aenean sed adipiscing diam. At tellus at urna condimentum mattis pellentesque. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Faucibus pulvinar elementum integer enim neque volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque. Dolor sit amet consectetur adipiscing elit duis. Nunc id cursus metus aliquam. Pharetra pharetra massa massa ultricies mi. Tempus urna et pharetra pharetra massa massa ultricies mi. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus.',
     icon: FingerPrintIcon,
   },
+];
+
+const dropdownbtn = [
+  {
+    name: 'Account settings',
+    active: true
+  },
+  {
+    name: 'Support',
+    active: false
+  },
+  {
+    name: 'License',
+    active: false
+  },
 ]
-const accordionoptions = {
-  alwaysOpen: true,
-  activeClasses: 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white',
-  inactiveClasses: 'text-gray-500 dark:text-gray-400',
-  onOpen: (item) => {
-      console.log('accordion item has been shown');
-      console.log(item);
-  },
-  onClose: (item) => {
-      console.log('accordion item has been hidden');
-      console.log(item);
-  },
-  onToggle: (item) => {
-      console.log('accordion item has been toggled');
-      console.log(item);
-  },
-};
-export {shortcode, features, pages, accordionItems, accordionoptions};
+export {shortcode, features, pages, accordionItems, dropdownbtn};
