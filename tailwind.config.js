@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -22,7 +23,20 @@ module.exports = {
       'lg': '1440px',
       // => @media (min-width: 1440px) { ... }
     },
-    extend: {},
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        primary:'#1D5B79',
+        primaryhover:'#15455c',
+        secondary:'#468B97',
+        secondaryhover:'',
+        darkprimary:'#4995b0',
+        darkprimaryhover:'#49859b',
+        darksecondary:'',
+        darksecondaryhover:'',
+      },
+    },
   },
   plugins: [
     

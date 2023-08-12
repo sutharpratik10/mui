@@ -1,5 +1,6 @@
 import React, { useState }  from 'react';
 
+import Header from './Headers'
 import {accordionItems} from '../data'
 
 function AccordionItem({
@@ -78,7 +79,7 @@ function BasicAccordion () {
   return (
       <div className="">
         
-        <h2 className="text-[48px] my-10 font-bold leading-7 text-indigo-600 dark:text-indigo-400">Accordions</h2>
+        <Header>Accordions</Header>
         <hr className='mb-10'/>
         <div className="mx-auto text-left">
           <p className="text-[24px] font-semibold  tracking-tight text-gray-900 dark:text-white">Accordion Standard</p>

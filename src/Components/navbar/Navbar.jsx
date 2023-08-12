@@ -65,10 +65,10 @@ function Navbar() {
                     {shortcode.map((item) => (
                       <div key={item.name} className="group relative flex items-center gap-x-2 rounded-md text-sm leading-6 hover:bg-gray-200">
                         <div className="flex h-11 w-10 flex-none items-center justify-center rounded-lg">
-                          <item.icon className="h-3 w-3 text-gray-600 dark:text-white group-hover:text-indigo-700" aria-hidden="true" />
+                          <item.icon className="h-3 w-3 text-gray-600 dark:text-white group-hover:text-primaryhover" aria-hidden="true" />
                         </div>
                         <div className="flex-auto">
-                          <NavLink to={item.href} className="block font-semibold text-gray-900 dark:text-white group-hover:text-indigo-600"> {item.name}
+                          <NavLink to={item.href} className="block font-semibold text-gray-900 dark:text-white group-hover:text-primaryhover"> {item.name}
                             <span className="absolute inset-0" />
                           </NavLink>
                         </div>
