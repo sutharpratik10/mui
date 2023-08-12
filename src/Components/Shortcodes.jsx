@@ -1,7 +1,7 @@
 import {React} from 'react'
 import { features } from './data'
 
-import {BasicAccordion, Buttons, Actionboxes } from './shortcodes/index'
+import {BasicAccordion, Buttons, Actionboxes, Alert } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -30,7 +30,7 @@ function Actionbox() {
 function Alerts() {
   return (
     <>
-    <h1 className='mt-56'>Alerts</h1>
+      <Alert/>
     </>
   )
 }
