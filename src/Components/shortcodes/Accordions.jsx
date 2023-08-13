@@ -73,7 +73,7 @@ function BasicAccordion(active) {
   return (
     <div>
       <Header>Accordions</Header>
-      <hr className='mb-10' />
+     
       <div className="mx-auto text-left">
         <p className="text-[24px] font-semibold tracking-tight text-primary dark:text-white">Accordion Standard</p>
       </div>

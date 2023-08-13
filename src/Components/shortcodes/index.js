@@ -3,3 +3,4 @@ export {Buttons, Simplebutton, Borderbutton, Elevatedbutton, Iconbutton, Groupbu
 export {default as Actionboxes} from './Actionbox'
 export {default as Headers} from './Headers'
 export {default as Alert} from './Alerts'
+export {default as Animation} from './Animations'

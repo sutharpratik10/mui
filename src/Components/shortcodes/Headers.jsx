@@ -6,6 +6,7 @@ function Headers({children, className}){
       <h2 className={`text-[48px] my-10 font-bold leading-7 text-primary dark:text-darkprimary ${className}`}>
         {children}
       </h2>
+      <hr className='mb-10'/>
     </div>
   )
 }

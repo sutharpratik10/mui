@@ -146,7 +146,7 @@ function Buttons() {
   return (
     <div>
       <Header>Buttons</Header>
-      <hr className='mb-10'/>
+      
       <div className="mx-auto text-left mb-5">
         <p className="text-[24px] font-semibold  tracking-tight text-gray-900 dark:text-white">Simple Button</p>
       </div>

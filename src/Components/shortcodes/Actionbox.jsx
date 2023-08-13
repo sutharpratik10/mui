@@ -8,7 +8,6 @@ function Actionbox() {
     <>
         <div>
             <Header>Action Box</Header>
-            <hr className='mb-10'/>
             <div class="border w-full xl:h-32 lg:h-32 md:h-40 sm:h-44 xs:h-52 px-5 border-gray-600 dark:border-gray-400 inline-flex">
                 <div className='flex flex-1 items-center justify-between'>
                     <div class="pr-5">
