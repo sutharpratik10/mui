@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import Header from './Headers'
 import { accordionItems } from '../data'
 
@@ -36,7 +42,7 @@ function AccordionItem({
   );
 }
 
-function Accordion({ type, children, className }) {
+function Custumaccordion({ type, children, className }) {
   const [openIndexes, setOpenIndexes] = React.useState([0])
   
   const handleAccordion = (idx) => {
@@ -78,7 +84,7 @@ function BasicAccordion(active) {
         <p className="text-[24px] font-semibold tracking-tight text-primary dark:text-white">Accordion Standard</p>
       </div>
       <div className="mb-10 py-3 ">
-        <Accordion type="Standard" className="your-custom-class">
+        <Custumaccordion type="Standard" className="your-custom-class">
           {accordionItems.map((item, idx) => (
             <AccordionItem
               key={idx}
@@ -91,14 +97,14 @@ function BasicAccordion(active) {
               }}
             </AccordionItem>
           ))}
-        </Accordion>
+        </Custumaccordion>
       </div>
       <hr className='mb-10' />
       <div className="mx-auto text-left">
         <p className="text-[24px] font-semibold tracking-tight text-primary dark:text-white">Accordion Single</p>
       </div>
       <div className="mb-10 py-3 ">
-        <Accordion type="Single" className="your-custom-class">
+        <Custumaccordion type="Single" className="your-custom-class">
           {accordionItems.map((item, idx) => (
             <AccordionItem
               key={idx}
@@ -111,7 +117,7 @@ function BasicAccordion(active) {
               }}
             </AccordionItem>
           ))}
-        </Accordion>
+        </Custumaccordion>
       </div>
       <hr className='mb-10' />
       <div className="mx-auto text-left">
@@ -138,6 +144,43 @@ function BasicAccordion(active) {
     </div>
   );
 }
+
+// function materialUIAccordion() {
+//   const [expanded, setExpanded] = React.useState(false);
+
+//   const handleChange = (panel) => (event, isExpanded) => {
+//     setExpanded(isExpanded ? panel : false);
+//   };
+
+//   return (
+//     <>
+//       <Header>Accordions</Header>
+     
+//       <div className="mx-auto text-left">
+//         <p className="text-[24px] font-semibold tracking-tight text-primary dark:text-white">Accordion Standard</p>
+//       </div>
+//       <div className="mb-10 py-3">
+//         <Accordion>
+//           {accordionItems.map((item) => (
+//             <> 
+//               <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls={item.ariacontrols} id={item.ariacontrols}>
+//                 <Typography sx={{ width: '33%', flexShrink: 0 }}>
+//                   {item.title}
+//                 </Typography>
+//               </AccordionSummary>
+//               <AccordionDetails>
+//                 <Typography>
+//                   {item.description}
+//                 </Typography>
+//               </AccordionDetails>
+//             </>
+//           ))}
+//         </Accordion>
+//         <hr className='mb-10' />
+//       </div>
+//     </>
+//   );
+// }
 
 
 export { BasicAccordion };

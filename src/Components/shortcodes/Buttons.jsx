@@ -24,7 +24,7 @@ function Simplebutton({children, className}){
 function Borderbutton({children, className}){
   return (
     <div>
-      <button class={`text-primary font-bold py-2 px-4 rounded flex justify-center transition ease-in-out border-2 border-primary hover:bg-primaryhover hover:text-white dark:hover:bg-white dark:hover:text-primary dark:border-white dark:text-white  ${className}`}>
+      <button class={`text-primary font-bold py-2 px-4 rounded flex justify-center transition ease-in-out border-2 border-primary hover:bg-primaryhover hover:text-white dark:hover:bg-white dark:hover:text-darkprimary dark:border-white dark:text-white  ${className}`}>
         {children}
       </button>
     </div>
@@ -193,12 +193,12 @@ function Buttons() {
         <p className="text-[24px] font-semibold  tracking-tight text-gray-900 dark:text-white">Big Button</p>
       </div>
       <div class="inline-flex">
-        <Bigbutton className="bg-primary hover:bg-primaryhover dark:hover:bg-darkprimaryhover text-white font-bold max-lg:py-10 max-lg:px-28 lg:py-10 lg:px-28 md:py-10 md:px-28 sm:py-10 sm:px-20 xs:py-0 xs:px-5 rounded transition ease-in-out ">
+        <Bigbutton className="bg-primary hover:bg-primaryhover dark:bg-darkprimary dark:hover:bg-darkprimaryhover text-white font-bold max-lg:py-10 max-lg:px-28 lg:py-10 lg:px-28 md:py-10 md:px-28 sm:py-10 sm:px-20 xs:py-0 xs:px-5 rounded transition ease-in-out ">
           <p className='text-2xl xs:text-lg font-bold'>Big Button</p>
           <p className='text-size[8px] font-semibold'>Description</p>
         </Bigbutton>
         <div className='ml-20 xs:ml-2'></div>
-        <Bigbutton className=" border-primary hover:bg-primaryhover text-primary hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-primary dark:text-white ring-2 ring-primary dark:ring-white font-bold max-lg:py-10 max-lg:px-28 lg:py-10 lg:px-28 md:py-10 md:px-28 sm:py-10 sm:px-20 xs:py-0 xs:px-5 rounded transition ease-in-out">
+        <Bigbutton className=" border-primary hover:bg-primaryhover text-primary hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-darkprimary dark:text-white ring-2 ring-primary dark:ring-white font-bold max-lg:py-10 max-lg:px-28 lg:py-10 lg:px-28 md:py-10 md:px-28 sm:py-10 sm:px-20 xs:py-0 xs:px-5 rounded transition ease-in-out">
           <p className='text-2xl xs:text-lg font-bold'>Big Button</p>
           <p className='text-size[8px] font-semibold'>Description</p>
         </Bigbutton>
@@ -210,7 +210,7 @@ function Buttons() {
       </div>
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primaryhover">
+          <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-primary dark:bg-darkprimary dark:hover:bg-darkprimaryhover px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primaryhover">
             Options
             <ChevronDownIcon className="-mr-1 h-5 w-5 text-white" aria-hidden="true" />
           </Menu.Button>
@@ -264,11 +264,11 @@ function Buttons() {
         <p className="text-[24px] font-semibold  tracking-tight text-gray-900 dark:text-white">Icon Button</p>
       </div>
       <div class="inline-flex">
-        <Iconbtn className="dark:border-white rounded-full border-primary border hover:bg-primaryhover dark:hover:bg-white dark:hover:text-primary dark:text-white hover:text-white text-primary ">
+        <Iconbtn className="dark:border-white rounded-full border-primary border hover:bg-primaryhover dark:hover:bg-white dark:hover:text-darkprimaryhover dark:text-white hover:text-white text-primary ">
           <svg class="fill-current w-4 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
         </Iconbtn>
         <div className='ml-20'></div>
-        <Iconbtn className="dark:border-darkprimary rounded-full border-primary hover:border-primary border bg-primaryhover hover:bg-transparent dark:hover:bg-white dark:hover:text-primary dark:text-white hover:text-primary text-white font-bold py-2 px-4 transition ease-in-out">
+        <Iconbtn className=" rounded-full border-primary hover:border-primary border bg-primaryhover hover:bg-transparent hover:text-primary dark:bg-darkprimary dark:border-darkprimary dark:hover:bg-white  dark:text-white dark:hover:text-darkprimary text-white font-bold py-2 px-4 transition ease-in-out">
           <svg class="fill-current w-4 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
         </Iconbtn>
       </div>

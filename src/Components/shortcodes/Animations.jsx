@@ -1,5 +1,4 @@
 import React from 'react'
-import { gsap } from "gsap";
 
 import Header from './Headers'
 
