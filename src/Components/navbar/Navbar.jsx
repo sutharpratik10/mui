@@ -1,8 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { React, Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { NavLink  } from 'react-router-dom';
-import {  Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { NavLink } from 'react-router-dom';
+import { Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
 
 import Themeswitcher from '../Themeswitcher'
 import { shortcode, pages } from '../data';
@@ -163,12 +164,4 @@ function Navbar() {
   )
 }
 
-//Navbar option 2
-const Navbar2 = () => {
-  return (
-    <>
-    </>
-  )
-}
-
-export  {Navbar, Navbar2};
+export default Navbar;

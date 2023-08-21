@@ -1,12 +1,13 @@
 import {React} from 'react'
 import { features } from './data'
 
-import {BasicAccordion, Buttons, Actionboxes, Alert, Animation } from './shortcodes/index'
+import Header from './shortcodes/Headers';
+import {Accordions, Buttons, Actionboxes, Alert, Animation } from './shortcodes/index'
 
 function Shortcodes() {
   return (
     <>
-    <h1 className='mt-56'>Short Code</h1>
+    <Header>ShortCodes</Header>
     </>
   )
 }
@@ -14,7 +15,7 @@ function Shortcodes() {
 function Accordion() {
   return (
     <>
-      <BasicAccordion/>
+      <Accordions/>
     </>
   )
 }
@@ -443,4 +444,4 @@ export {
   Testimonials,
   Typography,
   Videoaudio
-  } 
+  };
