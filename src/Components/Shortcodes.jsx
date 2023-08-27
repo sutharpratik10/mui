@@ -44,10 +44,10 @@ function Animations() {
   )
 }
 
-function Blockquotes() {
+function Blockquote() {
   return (
     <>
-    <h1 className='mt-56'>Blockquotes</h1>
+    <Blockquotes/>
     </>
   )
 }
@@ -403,7 +403,7 @@ export {
   Actionbox,
   Alerts,
   Animations,
-  Blockquotes,
+  Blockquote,
   Button,
   Carousel,
   Clients,
