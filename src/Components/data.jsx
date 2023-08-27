@@ -135,6 +135,7 @@ const accordionItems  = [
     description:
       'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
     status:'',
+    area:'panel1',
     ariacontrols:'panel1a-content'
   },
   {
@@ -142,6 +143,7 @@ const accordionItems  = [
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Rutrum quisque non tellus orci ac auctor augue mauris augue. Cras ornare arcu dui vivamus arcu felis. Risus in hendrerit gravida rutrum quisque non. Fringilla ut morbi tincidunt augue interdum velit euismod in.',
     status:'',
+    area:'panel2',
     ariacontrols:'panel2a-content'
   },
   {
@@ -149,13 +151,15 @@ const accordionItems  = [
     description:
       ' Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Sed nisi lacus sed viverra. Et netus et malesuada fames ac turpis egestas sed. Ut ornare lectus sit amet est placerat. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Amet justo donec enim diam vulputate ut. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus. Sed tempus urna et pharetra pharetra massa massa. Posuere ac ut consequat semper viverra nam libero. In dictum non consectetur a. Neque sodales ut etiam sit.',
     status:'',
+    area:'panel3',
     ariacontrols:'panel3a-content'
   },
   {
     title: 'Lacus suspendisse faucibus interdum posuere lorem ipsum.',
     description:
       'Cursus sit amet dictum sit amet justo donec enim. Convallis a cras semper auctor neque vitae tempus. Suspendisse in est ante in nibh mauris cursus mattis. Neque ornare aenean euismod elementum. Turpis tincidunt id aliquet risus feugiat in ante metus dictum. Amet dictum sit amet justo donec enim diam vulputate. Odio aenean sed adipiscing diam. At tellus at urna condimentum mattis pellentesque. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Faucibus pulvinar elementum integer enim neque volutpat. Rhoncus aenean vel elit scelerisque mauris pellentesque. Dolor sit amet consectetur adipiscing elit duis. Nunc id cursus metus aliquam. Pharetra pharetra massa massa ultricies mi. Tempus urna et pharetra pharetra massa massa ultricies mi. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus.',
-    status:'disabled',
+    icon: FingerPrintIcon,
+    status:'',
     ariacontrols:'panel4a-content'
   },
 ];
