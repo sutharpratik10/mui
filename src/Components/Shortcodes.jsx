@@ -2,7 +2,7 @@ import {React} from 'react'
 import { features } from './data'
 
 import Header from './shortcodes/Headers';
-import {Accordions, Buttons, Actionboxes, Alert, Animation, Blockquotes } from './shortcodes/index'
+import {Accordions, Buttons, Actionboxes, Alert, Animation, Blockquotes, Column } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -79,7 +79,7 @@ function Clients() {
 function Columns() {
   return (
     <>
-    <h1 className='mt-56'>Columns</h1>
+    <Column/>
     </>
   )
 }
