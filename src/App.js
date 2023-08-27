@@ -11,7 +11,7 @@ import {
   Actionbox,
   Alerts,
   Animations,
-  Blockquotes,
+  Blockquote,
   Button,
   Carousel,
   Clients,
@@ -76,7 +76,7 @@ const App = () => {
               <Route path="/shortcodes/actionbox" element={<Actionbox/>} />
               <Route path="/shortcodes/alerts" element={<Alerts/>} />
               <Route path="/shortcodes/animations" element={<Animations/>} />
-              <Route path="/shortcodes/blockquotes" element={<Blockquotes/>} />
+              <Route path="/shortcodes/blockquotes" element={<Blockquote/>} />
               <Route path="/shortcodes/buttons" element={<Button/>} />
               <Route path="/shortcodes/carousel" element={<Carousel/>} />
               <Route path="/shortcodes/clients" element={<Clients/>} />

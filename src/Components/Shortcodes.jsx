@@ -2,7 +2,7 @@ import {React} from 'react'
 import { features } from './data'
 
 import Header from './shortcodes/Headers';
-import {Accordions, Buttons, Actionboxes, Alert, Animation } from './shortcodes/index'
+import {Accordions, Buttons, Actionboxes, Alert, Animation, Blockquotes } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -44,10 +44,10 @@ function Animations() {
   )
 }
 
-function Blockquotes() {
+function Blockquote() {
   return (
     <>
-    <h1 className='mt-56'>Blockquotes</h1>
+    <Blockquotes/>
     </>
   )
 }
@@ -403,7 +403,7 @@ export {
   Actionbox,
   Alerts,
   Animations,
-  Blockquotes,
+  Blockquote,
   Button,
   Carousel,
   Clients,

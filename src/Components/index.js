@@ -7,14 +7,13 @@ export {default as Footer} from './footer/Footer';
 export {default as Theme } from './Theme';
 export {default as Themeswitcher} from './Themeswitcher';
 
-
 export {
     Shortcodes, 
     Accordion,
     Actionbox,
     Alerts,
     Animations,
-    Blockquotes,
+    Blockquote,
     Button,
     Carousel,
     Clients,
