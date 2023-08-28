@@ -1,9 +1,10 @@
 import React from 'react'
-
 import './style/header.css'
 function Header() {
   return (
-    <div>Header</div>
+    <h1 className='max-w-xl underline'>
+      Header
+    </h1>
   )
 }
 
