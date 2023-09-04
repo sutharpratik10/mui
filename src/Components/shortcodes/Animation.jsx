@@ -10,8 +10,20 @@ function Animation() {
   const animeeRef = useRef(null);
   useEffect(() => {
     gsap.fromTo("#sectionone", {x: -100, duration: 2, ease: "none", opacity:"0.1"}, {x: 0, duration: 0.7, ease: "none", opacity:"1"});
-    gsap.fromTo(".contentbox", {x: -10, duration: 2, ease: "circ.out", opacity:"0", delay: 0.5, stagger:0.1, from: "left"},  {x: 0, duration: 0.7, ease: "power1.inOut", opacity:"1", delay: 0.5, stagger:0.2 });
+    gsap.fromTo(".contentbox", {x: -10, duration: 2, ease: "circ.out", opacity:"0", delay: 0.5, stagger:0.1, from: "left"},  {x: 0, duration: 0.7, ease: "circ.out", opacity:"1", delay: 0.5, stagger:0.2 });
+    gsap.fromTo(".contentbox2",{x: -10, duration: 2, ease: "circ.out", opacity:"0", delay: 0.5, stagger:0.1, from: "left"},  {x: 0, duration: 0.7, ease: "circ.out", opacity:"1", delay: 0.5, stagger:0.2 });
     
+    //gsap function to animate on scroll
+    gsap.registerPlugin(ScrollTrigger); 
+    gsap.fromTo(".contentbox2", {x: -10, duration: 2, ease: "none", opacity:"0", delay: 0.5, stagger:0.1, from: "left"}, 
+    {x: 0, duration: 0.7, ease: "none", opacity:"1", delay: 0.5, stagger:0.1, 
+      scrollTrigger: {
+        trigger: ".contentbox2",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub:true
+    }});
+
   }, []);
 
   return (
