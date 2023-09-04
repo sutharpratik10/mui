@@ -15,7 +15,7 @@ function Animation() {
     
     //gsap function to animate on scroll
     gsap.registerPlugin(ScrollTrigger); 
-    gsap.fromTo(".contentbox2", {x: -10, duration: 2, ease: "none", opacity:"0", delay: 0.5, stagger:0.1, from: "left"}, 
+    gsap.fromTo(".contentbox2", {x: -10, duration: 2, ease: "none", opacity:"1", delay: 0.5, stagger:0.1, from: "left"}, 
     {x: 0, duration: 0.7, ease: "none", opacity:"1", delay: 0.5, stagger:0.1, 
       scrollTrigger: {
         trigger: ".contentbox2",
