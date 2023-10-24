@@ -22,7 +22,6 @@ export {
     Countdown,
     Counter,
     Datatable,
-    Datatables,
     Datepicker,
     Featurebox,
     Form,

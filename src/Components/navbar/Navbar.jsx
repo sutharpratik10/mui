@@ -62,7 +62,7 @@ function Navbar() {
                 leaveTo="opacity-0 translate-y-1"
               >
                 <Popover.Panel className="absolute -right-36 top-full z-10 mt-3 w-screen max-w-4xl overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 dark:bg-slate-600">
-                  <div className="p-2 columns-3 justify-between">
+                  <div className="p-2 columns-4 justify-between">
                     {shortcode.map((item) => (
                       <div key={item.name} className="group relative flex items-center gap-x-2 rounded-md text-sm leading-6 hover:bg-gray-200">
                         <div className="flex h-11 w-10 flex-none items-center justify-center rounded-lg">

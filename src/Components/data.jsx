@@ -68,7 +68,6 @@ const shortcode = [
     { name: 'Countdown Timer', href: '/shortcodes/countdown', icon: FaClock },
     { name: 'Counter', href: '/shortcodes/counter', icon: FaSortNumericUpAlt },
     { name: 'Data Table', href: '/shortcodes/datatable', icon: FaTable },
-    { name: 'Datatables', href: '/shortcodes/datatables', icon: FaDatabase },
     { name: 'Datepicker', href: '/shortcodes/datepicker', icon: FaCalendar },
     { name: 'Dropcap Highlight', href: '/shortcodes/dropcaphighlight', icon: FaLightbulb },
     { name: 'Feature Box', href: '/shortcodes/featurebox', icon: FaSquareRootAlt },
