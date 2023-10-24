@@ -2,7 +2,7 @@ import {React} from 'react'
 import { features } from './data'
 
 import Header from './shortcodes/Headers';
-import {Accordions, Buttons, Actionboxes, Alert, Animation, Blockquotes, Column, Contentboxes } from './shortcodes/index'
+import {Accordions, Buttons, Actionboxes, Alert, Animation, Blockquotes, Column, Contentboxes, Countdowns, Counters, Datatables, Datepickers } from './shortcodes/index'
 
 function Shortcodes() {
   return (
@@ -95,7 +95,7 @@ function Contentbox() {
 function Countdown() {
   return (
     <>
-    <h1 className='mt-56'>Countdown</h1>
+      <Countdowns/>
     </>
   )
 }
@@ -103,7 +103,7 @@ function Countdown() {
 function Counter() {
   return (
     <>
-    <h1 className='mt-56'>Counter</h1>
+      <Counters/>
     </>
   )
 }
@@ -111,22 +111,15 @@ function Counter() {
 function Datatable() {
   return (
     <>
-      <h1 className='mt-56'>Datatable</h1>
+      <Datatables/>
     </>
   )
 }
 
-function Datatables() {
-  return (
-    <>
-    <h1 className='mt-56'>Datatables</h1>
-    </>
-  )
-}
 function Datepicker() {
   return (
     <>
-    <h1 className='mt-56'>Datepicker</h1>
+      <Datepickers/>
     </>
   )
 }
